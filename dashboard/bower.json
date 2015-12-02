@@ -1,0 +1,22 @@
+{
+  "name": "flyalytics",
+  "main": "index.html",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.1.1",
+    "epoch": "~0.5.2",
+    "d3": "~3.4.9",
+    "modernizer": "~2.8.2"
+  }
+}

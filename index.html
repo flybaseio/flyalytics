@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>FlyAlytics</title>
+</head>
+<body>
+	<h1>FlyAlytics</h1>
+		
+	<button id="btn">Click me</button>
+	
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+	<script src="https://cdn.flybase.io/flybase.js"></script>
+	<script src="flyalytics.js"></script>	
+	<script>
+		document.getElementById( 'btn' ).addEventListener( 'click', function() {
+			var data = {
+				'event': 'button click'
+			};
+			flybase.trigger( 'client-event', btoa(JSON.stringify(data) ));
+		});
+		document.addEventListener( 'mousemove', function( e ) {
+			var data = {
+				event: 'mousemove',
+				mouseX: e.x,
+				mouseY: e.y
+			};
+			flybase.trigger( 'client-event', btoa(JSON.stringify(data) ));
+		});
+	<script>
+</body>
+</html>
