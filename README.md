@@ -1,2 +1,3 @@
-# flyalytics
-Real-time Analytics with flybase.io
+# FlyAlytics
+
+The code for a Real-Time Analytics dashboard powered by flybase.io.
