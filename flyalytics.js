@@ -6,4 +6,4 @@ var data = {
 	video: Modernizr.video,
 	websocket: Modernizr.websockets
 };
-flybase.trigger( 'client-data', btoa(JSON.stringify(data)) );
+flybase.trigger( 'client-data', data );
