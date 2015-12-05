@@ -15,7 +15,7 @@
 			var data = {
 				'event': 'button click'
 			};
-			flybase.trigger( 'client-event', btoa(JSON.stringify(data) ));
+			flybase.trigger( 'client-event', data );
 		});
 		document.addEventListener( 'mousemove', function( e ) {
 			var data = {
@@ -23,7 +23,7 @@
 				mouseX: e.x,
 				mouseY: e.y
 			};
-			flybase.trigger( 'client-event', btoa(JSON.stringify(data) ));
+			flybase.trigger( 'client-event', data );
 		});
 	<script>
 </body>
